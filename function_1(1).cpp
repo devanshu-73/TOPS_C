@@ -33,23 +33,23 @@
 #include<stdio.h>
 
 //Funciton Declaration
-void my_func(int a, int b);
+void add(int a, int b);
 
 int main()
 {
-	int a=23,b=4,c=43,d=45,e=76,f=3,g=67,h=4; 
+	int a,b; 
+	
+	printf("Enter two numbers : ");
+	scanf("%d %d",&a,&b);
 	
 	//Funciton Calling 
-	my_func(a,b); //actual parameter
-	my_func(c,d);
-	my_func(e,f);
-	my_func(g,h);
+	add(a,b);
 	
 	return 0;
 }
 
 //Funciton Defination
-void my_func(int a, int b) //here a and b are formal parameter
+void add(int a, int b) //here a and b are formal parameter
 {
 	printf("\nAddition of %d and %d is : %d",a,b,a+b);
 }
